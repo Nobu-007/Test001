@@ -1,0 +1,37 @@
+#layout {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+.testimonial {
+    border-radius: 0.5rem;
+}
+.testimonial:last-child {
+    border: 1px solid red;
+    grid-column: 4;
+    /* grid-row-start: 1;
+    grid-row-end: 3; This is the long version*/
+    grid-row: 1 / span 2; /*This is the shorthand version for the above*/
+}
+#box1 {
+    background-color: blue;
+}
+#box2 {
+    background-color: green;
+}
+#box3 {
+    background-color: yellow;
+}
+#box4 {
+    background-color: red;
+}
+#box5 {
+    background-color: pink;
+}

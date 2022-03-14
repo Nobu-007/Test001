@@ -1,0 +1,125 @@
+html {
+    /* Setting a base font size of 10px give us easier rem calculations
+       Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+     */
+    font-size: 10px;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+  
+  
+  h2 {
+    font-size: 3.25rem;
+  }
+  
+  a {
+    color: #477ca7;
+  }
+  
+  a:visited {
+    color: #74638f;
+  }
+  
+  main {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-areas: 
+      'one'
+      'two'
+      'three'
+      'four';
+    margin: 30px 8px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #eee;
+  }
+  
+  img {
+    max-width: 100%;
+    /* display: block; */
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  #img-div { /*belongs to figure element*/
+    background: white;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  #img-caption {
+    margin: 15px auto 5px auto;
+    max-width: 350px;
+  }
+  
+  
+  #headline {
+    margin: 50px 0;
+    text-align: center;
+  }
+  
+  ul {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  li {
+    margin: 16px 0;
+  }
+  
+  blockquote {
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+  }
+  header {
+      border: 1px solid red;
+  }
+  #tribute-img {
+      background-color: cyan;
+  }
+  #tribute-info {
+      background-color: red;
+  }
+  footer {
+      background-color: purple;
+  }
+  @media (min-width: 40em) {
+    main {
+        grid-template-areas: 
+        'one one one'
+        'two three three'
+        'four four four';
+    }
+}
+.grid-cell {
+    border-radius: 0.5rem;
+}
+.grid-cell:nth-child(1) {
+    grid-area: one;
+}
+.grid-cell:nth-child(2) {
+    grid-area: two;
+}
+.grid-cell:nth-child(3) {
+    grid-area: three;
+}
+.grid-cell:nth-child(4) {
+    grid-area: four;
+}

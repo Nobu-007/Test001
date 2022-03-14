@@ -1,0 +1,56 @@
+#Gridlayout {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
+
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+@media (min-width: 50em) {
+    #Gridlayout {
+        grid-template-areas: 
+        'one one one'
+        'two three three'
+        'four four four';
+    }
+}
+.testimonial {
+    border-radius: 0.5rem;
+}
+
+.testimonial:nth-child(1) {
+    grid-area: one;
+}
+.testimonial:nth-child(2) {
+    grid-area: two;
+}
+.testimonial:nth-child(3) {
+    grid-area: three;
+}
+.testimonial:nth-child(4) {
+    grid-area: four;
+}
+
+@media screen and (min-width: 50em) {
+    h1 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
+#box1 {
+    background-color: blue;
+}
+#box2 {
+    background-color: green;
+}
+#box3 {
+    background-color: yellow;
+}
+#box4 {
+    background-color: red;
+}
